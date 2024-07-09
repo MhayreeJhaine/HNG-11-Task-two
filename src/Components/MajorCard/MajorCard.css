@@ -1,0 +1,155 @@
+.major-section {
+  width: 100%;
+  /* height: 86.3svh; */
+}
+
+.major {
+  margin: 20px 190px 0;
+  padding: 25px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-card img {
+  height: 595px;
+  width: 380px;
+}
+
+.right-card {
+  padding-right: 100px;
+  line-height: 2.5;
+}
+
+.right-card h3 {
+  /* font-weight: 600; */
+  letter-spacing: -1.2px;
+}
+
+.ratings {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  margin-top: -12px;
+}
+
+.ratings > p .color {
+  color: #c69b7b;
+}
+
+.star {
+  color: #c69b7b;
+  word-spacing: 2px;
+}
+
+.star > .icon {
+  margin-right: 5px;
+}
+
+.price span {
+  padding-left: 10px;
+  color: #9ca3af;
+}
+
+.colorBoxes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: -6px;
+}
+
+.add-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.add-section > div button {
+  height: 34px;
+  font-size: 11px;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.add-section > .line-one button:nth-child(1) {
+  width: 85px;
+  padding: 10px;
+  outline: none;
+  background: #fff;
+  border: #3a3845 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-section > .line-one button:nth-child(1) span:nth-child(1),
+.add-section > .line-one button:nth-child(1) span:nth-child(3) {
+  font-size: 12px;
+}
+
+.add-section > .line-one button:nth-child(2) {
+  width: 250px;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  background: #3a3845;
+  border: #3a3845 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-section > .line-two button:nth-child(1) {
+  width: 300px;
+  padding: 10px;
+  outline: none;
+  background: #fff;
+  border: #3a3845 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-section > .line-two button:nth-child(2) {
+  width: 35px;
+  padding: 10px;
+  outline: none;
+  background: #fff;
+  font-size: 15px;
+  border: #3a3845 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials p {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+.socials > .icons span {
+  padding-right: 10px;
+  color: #c69b7b;
+}
+
+.info {
+  margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-weight: 500;
+}

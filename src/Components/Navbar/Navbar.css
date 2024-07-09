@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 100px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-logo p {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.nav-menu li link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-signup-cart {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-signup-cart button {
+  width: 82px;
+  height: 32px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.nav-signup-cart button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #5d5c5c;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.nav-signup-cart button:hover::before {
+  width: 100%;
+}
+
+.nav-signup-cart button:active {
+  background: #f3f3f3;
+  color: #000;
+}
+
+.nav-signup-cart img {
+  height: 22px;
+  width: 22px;
+}
+
+.cart-count {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  margin-left: -57px;
+  border-radius: 50%;
+  font-size: 11px;
+  background: #b90808;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 16px 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-menu,
+  .nav-signup-cart button {
+    display: none;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+}

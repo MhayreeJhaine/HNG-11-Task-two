@@ -1,0 +1,188 @@
+.checkout-container {
+  padding: 20px 100px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.checkout-container > div {
+  width: 40%;
+}
+
+.checkout-container > div h2 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-container > .input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.input-container > .input label {
+  font-size: 14px;
+  color: #3a3845;
+}
+
+.input-container > .input input,
+.input-container > .input select,
+.input-container > .input textarea {
+  padding: 15px;
+  border: 1px solid #3a3845;
+  outline: none;
+}
+
+.checkout-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.checkout-links > a {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.checkout-links > a:first-child {
+  color: #3a3845;
+  justify-content: flex-start;
+}
+
+.checkout-links > a:last-child {
+  color: #fff;
+  background-color: #3a3845;
+}
+
+div.total {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+div.total > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.total > div p,
+.checkout-container h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #3a3845;
+}
+
+div.total > div:last-child p,
+.checkout-container h3 {
+  font-weight: 600;
+}
+
+.checkout-container h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.checkout-container hr {
+  margin-bottom: 20px;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #3a3845;
+  color: #fff;
+}
+
+.payment-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-container > div p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-container > div p > span {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-container .input-container {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.payment-container .input-container input,
+.place-order-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.place-order-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .checkout-container {
+    padding: 20px 50px;
+    gap: 50px;
+  }
+  .checkout-container > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .checkout-container {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .checkout-container,
+  .input-container,
+  .checkout-links {
+    flex-direction: column;
+  }
+
+  .checkout-container > div,
+  .checkout-links > a {
+    width: 100%;
+  }
+
+  .checkout-links > a:first-child {
+    justify-content: center;
+  }
+
+  .payment-container .input-container {
+    gap: 20px;
+  }
+}

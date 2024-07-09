@@ -1,0 +1,110 @@
+.hero-section {
+  width: 100%;
+  height: 86.3svh;
+}
+
+.hero-section > .hero {
+  height: 70svh;
+  margin: 1.1% 6% 0 6%;
+  padding: 25px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  background: #f4f6f5;
+}
+
+.left {
+  padding-left: 35px;
+}
+
+.text h2 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.7;
+  margin-top: 12px;
+  margin-bottom: -3px;
+}
+
+.text-one {
+  width: 180px;
+  height: 58px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  transform: rotate(-2.1deg);
+}
+
+.one,
+.three {
+  transform: rotate(2.1deg);
+}
+
+.text-three {
+  background: #ebd96b;
+  width: 200px;
+  height: 58px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  transform: rotate(-2.1deg);
+}
+
+.text-two,
+.text-four {
+  padding-left: 15px;
+}
+
+.paragraph {
+  font-weight: 500;
+  transform: scaleY(1.2);
+  margin-bottom: 25px;
+  margin-left: 15px;
+  word-spacing: 1px;
+}
+
+.left_button button {
+  margin-left: 15px;
+  width: 110px;
+  height: 42px;
+  outline: hidden;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  transform: scaleY(1.1);
+
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.left_button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #5d5c5c;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.left_button button:hover::before {
+  width: 100%;
+}
+
+.left_button button:active {
+  background: #f3f3f3;
+  color: #000;
+}
+
+.right img {
+  width: 520px;
+  height: 530px;
+  padding-right: 100px;
+  margin-top: -23px;
+}
