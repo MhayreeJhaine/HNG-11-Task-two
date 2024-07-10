@@ -6,7 +6,6 @@ import { FaArrowRight } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="vertical-line"></div>
       <div className="content">
         <div className="left_column">
           <div className="logo">
@@ -26,6 +25,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
+        <hr />
+
         <div className="right_column">
           <div className="column_one">
             <h3>ABOUT US</h3>
@@ -52,13 +53,17 @@ const Footer = () => {
             <p>Luxury</p>
           </div>
         </div>
+        <hr />
       </div>
       <div className="horizontal-line"></div>
 
       <div className="copyright-text">
         <p>
           Copyright © 2024 Hand Craft | All Rights Reserved |
-          <span> Terms and Conditions</span> | <span>Privacy Policy </span>
+          <span>
+            Terms and Conditions <span className="bar"> | </span>
+          </span>
+          <span>Privacy Policy </span>
         </p>
       </div>
     </div>

@@ -1,5 +1,8 @@
 .cart-container {
   padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 500px;
 }
 
 .cart-container > p:first-child {
@@ -50,7 +53,7 @@
 }
 
 .coupon-btns span,
-.buttons > span {
+.buttons > .Home {
   width: 166px;
   height: 48px;
   background-color: #3a3845;
@@ -59,6 +62,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .buttons > span {
@@ -72,7 +76,7 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 25px;
-  float: right;
+  align-self: flex-end;
   color: #fff;
   padding: 20px;
 }
@@ -105,12 +109,14 @@
 @media screen and (max-width: 1200px) {
   .cart-container {
     padding: 20px 50px;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .cart-container {
     padding: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -120,7 +126,12 @@
     float: left;
   }
 
+  .cart-container {
+    margin-bottom: 50px;
+  }
+
   .buttons,
+  .Home,
   .coupon-btns {
     flex-direction: column;
     width: 100%;
@@ -128,7 +139,7 @@
 
   .coupon-btns input,
   .coupon-btns span,
-  .buttons > span {
+  .buttons > .Home {
     width: 100%;
     border: 1px solid #3a3845;
   }
