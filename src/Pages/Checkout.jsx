@@ -1,5 +1,9 @@
 import React from "react";
 import "./Checkout.css";
+import { FaArrowRight } from "react-icons/fa";
+import { FaPaypal } from "react-icons/fa";
+import Visa from "../Components/Assets/visa.png";
+import mastercard from "../Components/Assets/mastercard.png";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
@@ -82,7 +86,9 @@ const Checkout = () => {
 
         <div className="checkout-links">
           <Link to={"/cart"}>{"<"} RETURN TO CART</Link>
-          <Link to={"/"}>CONTINUE TO SHIPPING {">"}</Link>
+          <Link to={"/"}>
+            CONTINUE TO SHIPPING <span> {<FaArrowRight />}</span>
+          </Link>
         </div>
       </div>
       <div>
@@ -138,7 +144,10 @@ const Checkout = () => {
                 <span>Credit card</span>
               </span>
 
-              <span className="credit-card-images"></span>
+              <span className="credit-card-images">
+                <img src={Visa} alt="" />
+                <img src={mastercard} alt="" />
+              </span>
             </p>
 
             <hr />
@@ -170,7 +179,9 @@ const Checkout = () => {
               <p>
                 <span>
                   <input type="radio" />
-                  <span className="paypal-logo"></span>
+                  <span className="paypal-logo">
+                    <FaPaypal />
+                  </span>
                   <span>PayPal</span>
                 </span>
               </p>

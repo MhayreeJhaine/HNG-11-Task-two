@@ -47,7 +47,7 @@ const Navbar = () => {
         <Link style={{ textDecoration: "none", color: "#000" }} to="/cart">
           <img src={cart_icon} alt="Cart" />
         </Link>
-        <div className="cart-count">0</div>
+        <div className="cart-count">3</div>
       </div>
     </div>
   );

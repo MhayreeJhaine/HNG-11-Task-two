@@ -1,0 +1,27 @@
+.ShopItems {
+  /* gap: 10px; */
+  height: 85vh;
+  margin: 15px 80px;
+  margin-bottom: 15px;
+}
+
+.ShopItems h1 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-left: 27px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_items {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

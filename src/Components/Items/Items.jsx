@@ -9,7 +9,9 @@ const Items = (props) => {
       <p>{props.price}</p>
       <p className="Description">{props.description}</p>
 
-      <button>ADD TO CART</button>
+      <div className="buttons">
+        <p>ADD TO CART</p>
+      </div>
     </div>
   );
 };

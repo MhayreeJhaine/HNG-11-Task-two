@@ -10,6 +10,7 @@
 }
 
 .checkout-container > div h2 {
+  font-size: 19px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -68,6 +69,11 @@
 .checkout-links > a:last-child {
   color: #fff;
   background-color: #3a3845;
+}
+
+.checkout-links > a:last-child span {
+  font-size: 10px;
+  padding-left: 5px;
 }
 
 div.total {
@@ -129,6 +135,11 @@ div.total > div:last-child p,
 .payment-container > div p > span {
   display: flex;
   gap: 10px;
+}
+
+.credit-card-images img {
+  width: 35px;
+  height: 25px;
 }
 
 .payment-container .input-container {

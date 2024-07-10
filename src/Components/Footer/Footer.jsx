@@ -1,0 +1,68 @@
+import React from "react";
+import "./Footer.css";
+import logo from "../Assets/Logo.png";
+import { FaArrowRight } from "react-icons/fa";
+
+const Footer = () => {
+  return (
+    <div className="footer">
+      <div className="vertical-line"></div>
+      <div className="content">
+        <div className="left_column">
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+            <p>Handcrafted</p>
+          </div>
+          <p>
+            We supply you the best of ceramic craft work and design to suit your
+            taste
+          </p>
+          <div className="btn">
+            <p>
+              GET STARTED
+              <span>
+                <FaArrowRight />
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="right_column">
+          <div className="column_one">
+            <h3>ABOUT US</h3>
+            <p>Vision</p>
+            <p>Strength</p>
+            <p>Awards</p>
+            <p>Testimonials</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div className="column_two">
+            <h3>PRODUCTS</h3>
+            <p>Pottery</p>
+            <p>Cutlery</p>
+            <p>Spoon</p>
+            <p>Flower Vase</p>
+            <p>Hand-made products</p>
+          </div>
+          <div className="column_three">
+            <h3>DEALINGS</h3>
+            <p>Home Decorations</p>
+            <p>Retail</p>
+            <p>Wholesales</p>
+            <p>Recycling</p>
+            <p>Luxury</p>
+          </div>
+        </div>
+      </div>
+      <div className="horizontal-line"></div>
+
+      <div className="copyright-text">
+        <p>
+          Copyright © 2024 Hand Craft | All Rights Reserved |
+          <span> Terms and Conditions</span> | <span>Privacy Policy </span>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
