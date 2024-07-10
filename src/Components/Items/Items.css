@@ -1,6 +1,7 @@
 .item {
   width: 19%;
   font-size: 13px;
+  min-width: 250px;
 }
 
 .item p {
@@ -11,6 +12,7 @@
 .item img {
   width: 100%;
   height: 260px;
+  object-fit: cover;
 }
 
 .Description {

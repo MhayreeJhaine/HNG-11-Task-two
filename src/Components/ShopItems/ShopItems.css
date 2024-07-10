@@ -1,7 +1,6 @@
 .ShopItems {
   /* gap: 10px; */
-  height: 85vh;
-  margin: 15px 80px;
+  padding: 20px 100px;
   margin-bottom: 15px;
 }
 
@@ -24,4 +23,16 @@
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+  .ShopItems {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ShopItems {
+    padding: 20px;
+  }
 }

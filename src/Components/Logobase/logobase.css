@@ -13,4 +13,11 @@
 .logo-imgs img {
   width: 65px;
   height: 50px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo-imgs img {
+    width: 15%;
+  }
 }
