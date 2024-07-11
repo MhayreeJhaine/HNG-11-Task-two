@@ -58,13 +58,10 @@ const Footer = () => {
       <div className="horizontal-line"></div>
 
       <div className="copyright-text">
-        <p>
-          Copyright © 2024 Hand Craft | All Rights Reserved |
-          <span>
-            Terms and Conditions <span className="bar"> | </span>
-          </span>
-          <span>Privacy Policy </span>
-        </p>
+        <span>Copyright © 2024 Hand Craft </span>
+        <span>All Rights Reserved </span>
+        <span>Terms and Conditions</span>
+        <span>Privacy Policy </span>
       </div>
     </div>
   );

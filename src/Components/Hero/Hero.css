@@ -100,7 +100,7 @@
   height: 530px;
   align-self: flex-end;
   margin-bottom: -50px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1200px) {
@@ -125,7 +125,46 @@
 }
 
 @media screen and (max-width: 500px) {
+  .hero-section > .hero {
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+  }
+
   .right {
     margin-left: -100px;
+  }
+
+  .right img {
+    width: 260px;
+    height: 590px;
+    align-self: flex-end;
+    margin-top: -100px;
+    margin-bottom: -250px;
+    object-fit: contain;
+  }
+
+  .text h2 {
+    font-size: 27px;
+  }
+
+  .left_button button {
+    /* margin-left: 15px; */
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .text-three {
+    width: 160px;
+    height: 45px;
+    padding-left: 15px;
+  }
+  .paragraph {
+    font-weight: 500;
+    transform: scaleY(0.9);
   }
 }
